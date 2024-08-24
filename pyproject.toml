@@ -42,6 +42,9 @@ dependencies = [
     'mkdocs-material',
 ]
 
+[project.scripts]
+project_name = "project_name.__main__:main" # TODO: Change!
+
 # --- ruff
 [tool.ruff]
 line-length = 120
