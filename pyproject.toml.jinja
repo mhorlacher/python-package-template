@@ -48,8 +48,10 @@ dependencies = [
     'mkdocs-material',
 ]
 
+{% if has_CLI %}
 [project.scripts]
 {{project_name}} = "{{project_name}}.__main__:main"
+{% endif %}
 
 # --- ruff
 [tool.ruff]
