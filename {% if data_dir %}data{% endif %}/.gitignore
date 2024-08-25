@@ -1,0 +1,10 @@
+*
+
+!Snakefile
+!.gitignore
+
+!raw/
+!raw/.gitkeep
+
+!processed/
+!processed/.gitkeep
