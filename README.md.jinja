@@ -11,10 +11,21 @@ A short description of the project.
 pip install {{project_name}}
 ```
 
+or 
+
+```
+pip install git+https://github.com/github.com/mhorlacher/{{project_name}}.git@SOME_BRANCH
+```
+
+to install from a specific branch (e.g. the latest development version of package version). 
+
 ### Using Conda
 
 ```
-conda install -c conda-forge {{project_name}}
+git clone https://github.com/github.com/mhorlacher/{{project_name}}
+cd {{project_name}}
+make env
+conda activate {{project_name}}
 ```
 
 ### Using Docker
