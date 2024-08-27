@@ -1,2 +1,7 @@
-docker: true
-mkdocs: true
+# --- docs
+mkdocs: false
+
+# --- packaging
+docker: false
+# pypi: false #  Not supported yet. 
+# conda: false # Not supported yet. 

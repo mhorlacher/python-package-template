@@ -5,17 +5,23 @@ build-backend = "setuptools.build_meta"
 
 # --- setuptools
 [tool.setuptools]
-py-modules = ["project_name"] # TODO: Change!
+py-modules = ["{{project_name}}"]
 
 # --- project
 [project]
 version = "0.0.1"
 
-name = "project_name" # TODO: Change!
+name = "{{project_name}}"
 authors = [
     { name = "Marc Horlacher", email = "marc.horlacher@gmail.com" },
 ]
-description = "A description of the project." # TODO: Change!
+description = "A description of the project."
+
+urls = { 
+    "Homepage" = "https://github.com/yourusername/{{project_name}}",
+    "Repository" = "https://github.com/yourusername/{{project_name}}",
+}
+
 readme = "README.md"
 requires-python = ">=3.8"
 # keywords = ["one", "two"]
@@ -42,8 +48,10 @@ dependencies = [
     'mkdocs-material',
 ]
 
+{% if has_CLI %}
 [project.scripts]
-project_name = "project_name.__main__:main" # TODO: Change!
+{{project_name}} = "{{project_name}}.__main__:main"
+{% endif %}
 
 # --- ruff
 [tool.ruff]
