@@ -22,6 +22,7 @@ repos:
         - id: check-added-large-files # Check for large files added to Git
           args: ['--maxkb=50000'] # ~50MB
       
+        {% if protect_main %}
         - id: no-commit-to-branch # Prevent commits to a branch
           args: ['--branch', 'main']
-      
+        {% endif %}

@@ -16,3 +16,8 @@ ci_workflows:
     type: bool
     help: Should GitHub Actions CI workflows be created?
     default: true
+
+protect_main:
+    type: bool
+    help: Protect main branch (no direct commits)?
+    default: true
