@@ -50,16 +50,16 @@
 ```
 
 
-## Docker
+## GitHub Actions
 
-Docker images are build automatically for all tagged commits using the `docker-build-push` action. 
-
-
-## PyPI
+### Build documentation with mkdocs
 
 ...
 
-
-## Conda
+### Packaging with Docker
 
 ...
+
+## Pre-commit Hooks
+
+... 
