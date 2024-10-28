@@ -23,7 +23,7 @@ jobs:
         id: check_workflow_flag
         uses: mikefarah/yq@master
         with:
-          cmd: echo "WORKFLOW_FLAG=$(yq '.pypi' workflows-config.yml)" >> $GITHUB_ENV
+          cmd: echo "WORKFLOW_FLAG=$(yq '.mkdocs' workflows-config.yml)" >> $GITHUB_ENV
 
       - name: Print workflow flag
         run: echo ${{ env.WORKFLOW_FLAG }}
